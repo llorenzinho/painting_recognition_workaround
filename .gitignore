@@ -1,0 +1,5 @@
+.venv
+
+# Actually the folder contains few experiments, we don't need to commit the app itself, just the experiments
+painting_recognition
+tests
