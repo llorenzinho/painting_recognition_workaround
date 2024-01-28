@@ -2,20 +2,12 @@
 name = "painting-recognition"
 version = "0.1.0"
 description = ""
-authors = ["llorenzinho <lorenzo.dagostino.ref@gmail.com>"]
+authors = ["Lorenzo D'Agostino <lorenzo.dagostino.ref@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11.2"
+python = "~3.11.2"
 qdrant-client = "^1.7.0"
-ipykernel = "^6.28.0"
-pillow = "^10.2.0"
-torch = "^2.1.2"
-numpy = "^1.26.3"
-datasets = "^2.16.1"
-transformers = "^4.36.2"
-opencv-python = "^4.9.0.80"
-matplotlib = "^3.8.2"
 fastapi = "^0.109.0"
 uvicorn = "^0.27.0"
 pydantic = "^2.5.3"

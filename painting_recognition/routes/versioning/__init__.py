@@ -1,9 +1,3 @@
-from fastapi import APIRouter
-from painting_recognition.core import logger
+from painting_recognition.routes.versioning.v1 import v1
 
-v1 = APIRouter(prefix='/api/v1')
-
-@v1.get('/healtz')
-async def healtz():
-    logger.debug('Healtz check')
-    return {'api_version': 'v1'}
+__all__ = ['v1']

@@ -20,13 +20,15 @@ poetry config virtualenvs.in-project true
 poetry install
 ```
 
-## Notebook Usage
-
-Run the notebook in the `notebooks` directory.
-
 ## Api development
 
 Run app using poetry:
 ```bash	
 poetry run uvicorn painting_recognition:app --reload
 ```
+
+**Or by using docker-compose:**
+```bash
+docker-compose up
+```
+this command will build the docker image based on the `Dockerfile.dev` file and run both containers: `qdrant` and `painting_recognition` api.

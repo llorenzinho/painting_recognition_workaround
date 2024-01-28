@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But don't ignore these files
+!.dockerignore
+!Dockerfile
+!Dockerfile.dev
+!painting_recognition/
+!poetry.lock
+!pyproject.toml
