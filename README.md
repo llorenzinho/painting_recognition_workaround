@@ -20,6 +20,13 @@ poetry config virtualenvs.in-project true
 poetry install
 ```
 
-## Usage
+## Notebook Usage
 
-Run the notebook in the `notebooks` directory:
+Run the notebook in the `notebooks` directory.
+
+## Api development
+
+Run app using poetry:
+```bash	
+poetry run uvicorn painting_recognition:app --reload
+```
