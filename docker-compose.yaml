@@ -3,7 +3,7 @@ services:
   qdrant:
     image: qdrant/qdrant
     ports:
-      - "6333:6333"
+      - 6333:6333
   
   api:
     build:
@@ -16,7 +16,7 @@ services:
     environment:
       - QDRANT_HOST=qdrant
       - QDRANT_PORT=6333
+      - QDRANT_INDEX_NAME=paintings
+      - QDRANT_VECTOR_SIZE=384
     depends_on:
-      - qdrant
-    links:
       - qdrant
